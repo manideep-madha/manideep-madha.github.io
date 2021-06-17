@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="ExtensionConfigure.css">
+</head>
+<body>
+    <div class="container">
+        <div id = "SelectWorksheet"class="tabcontent">
+            <div class="col-md-6 col-xs-6">
+                <span class="dropdown-label">Worksheet Data Source : </span>
+				<select id="selectWorksheet" class="select">
+                    <option disabled selected="selected">-- None Selected --</option>
+                </select>
+				<br/>
+				<label for="renameSheet">Rename Sheet : </label>
+				<input type = 'text' id = 'renameSheet' />
+				<div id ='column-list'></div>
+            </div>
+        </div>
+        <div class="row dialog-buttons">
+            <span id="error"></span>
+            <button id="save" class="btn btn-success">Save</button>
+            <button id="cancel" class="btn btn-danger">Cancel</button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../lib/tableau.extensions.1.latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="ExtensionConfigure.js"></script>
+</html>
